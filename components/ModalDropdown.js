@@ -151,7 +151,7 @@ export default class ModalDropdown extends Component {
 
   selectByValue(val) {
     let idx = this.props.options.indexOf(val);
-    select(idx);
+    this.select(idx);
   }
 
   _renderButton() {
