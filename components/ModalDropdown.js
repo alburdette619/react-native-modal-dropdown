@@ -149,6 +149,11 @@ export default class ModalDropdown extends Component {
     });
   }
 
+  selectByValue(val) {
+    let idx = this.props.options.indexOf(val);
+    select(idx);
+  }
+
   _renderButton() {
     return (
       <TouchableOpacity ref={button => this._button = button}
